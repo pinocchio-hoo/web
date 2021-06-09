@@ -1,0 +1,196 @@
+<html lang="ko">
+<head>
+    <title>index.html/title>
+    <style>
+        header{
+        width: 100%;
+        height: 15%;
+        border-top:solid 2px #000000;
+        }
+        nav ul li {
+        list-style: none;
+        float:right;
+        margin-right: 50px;
+        margin-top: 30px;
+        }
+        #content{
+        width: 100%;
+        height: 75%;
+        }
+        #back{
+        width: 1000px;
+        height: 100%;
+        margin: 0 auto;
+        }
+        #back h1 {
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        /*slide*/
+        *{margin:0;padding:0;}
+        ul,li{list-style:none;}
+        .slide{height:300px;overflow:hidden;}
+        .slide ul{width:calc(100% * 4);display:flex;animation:slide 8s infinite;} /* slide를 8초동안 진행하며 무한반복 함 */
+        .slide li{width:calc(100% / 4);height:300px;}
+        .slide li:nth-child(1){background:#ffa;}
+        .slide li:nth-child(2){background:#faa;}
+        .slide li:nth-child(3){background:#afa;}
+        .slide li:nth-child(4){background:#aaf;}
+        @keyframes slide {
+        0% {margin-left:0;} /* 0 ~ 10  : 정지 */
+        10% {margin-left:0;} /* 10 ~ 25 : 변이 */
+        25% {margin-left:-100%;} /* 25 ~ 35 : 정지 */
+        35% {margin-left:-100%;} /* 35 ~ 50 : 변이 */
+        50% {margin-left:-200%;}
+        60% {margin-left:-200%;}
+        75% {margin-left:-300%;}
+        85% {margin-left:-300%;}
+        100% {margin-left:0;}
+        }
+        #firstbox{
+        width: 100%;
+        height: 50%;
+        margin-top: 30px;
+    }
+    #firstbox .box1{
+        float: left;
+        margin-left: 40px;
+        margin-top: 16px;
+        width: 450px;
+        height: 100%;
+        background: white;
+        
+    }
+    #firstbox .box2{
+        float: right;
+        margin-right: 40px;
+        margin-top: 16px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    #firstbox .box3{
+        float: left;
+        margin-left: 40px;
+        margin-top: 16px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    #firstbox .box4{
+        float: right;
+        margin-right: 40px;
+        margin-top: 16px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    .box1 ul li {
+        margin:0 auto;
+    }
+    #secondbox{
+        width: 100%;
+        height: 50%;
+        margin-top: 30px;
+    }
+    #secondbox .box1{
+        float: left;
+        margin-left: 40px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    #secondbox .box2{
+        float: right;
+        margin-right: 40px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    #secondbox .box3{
+        float: left;
+        margin-left: 40px;
+        width: 200PX;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    #secondbox .box4{
+        float: right;
+        margin-right: 40px;
+        width: 200px;
+        height: 100%;
+        background: white;
+        text-align : center;
+    }
+    footer{
+        background: white;
+        width: 100%;
+        height: 10%;
+        border-top: solid 2px #000000;
+        float: left;
+        margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+<div id="back">
+    <header>
+        <h1>JH Entertain</h1>
+        <nav>
+                <ul>
+                    <li><a href="COMPANY.html">COMPANY</a></li>
+                    <li><a href="STORE.html">STORE</a></li>
+                    <li><a href="HOM.html">HOM</a></li>
+                </ul>
+        </nav>
+    </header>
+    <div id="contetnt">
+        <div class="slide">
+            <ul>
+                  <li><img src='work.img/jini1.png' width="1000px" height="100%"></li>
+                  <li><img src='work.img/zero1.png' width="1000px" height="100%"></li>
+                  <li><img src='work.img/sunny.png' width="1000px" height="100%"></li>
+                  <li><img src='work.img/gimo.png' width="1000px" height="100%"></li>
+            </ul>
+        </div>
+        <div id="firstbox">
+            <span class="box1">
+                <h4>NOTICE</h4>
+                <hr style="border: solid 3px black;">
+                <ul>
+                    <li>[안내 사항] ZERO 군 입대</li><br>
+                    <hr style="border: solid 1px gray;">
+                    <li>[안내 사항] JINI 두 번째 싱글앨범 '요술램프' 발매</li><br>
+                    <hr style="border: solid 1px gray;">
+                    <li>[안내 사항] SUNNY '심장 떨어지는 동거' 여자 주인공 확정</li><br>
+                    <hr style="border: solid 1px gray;">
+                    <li>[안내 사항] GIMO 열애 인정, 알아가는 단계</li><br>
+                    <hr style="border: solid 1px gray;">
+                    <li>[안내 사항] JH Entertain 대표 이사 '최지혜' 파산 당해 </li>
+                </ul>
+            </span>
+            <span class="box1">
+                <h4>MUSIC VIDEO</h4>
+                <hr style="border: solid 3px black;">
+              <ul>
+                    <li>
+                   <iframe width="560" height="315" src="https://www.youtube.com/embed/9gQKtVnV7us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        
+    <footer>
+        <br>
+        <img src="work.img/jh.png">
+    </footer>
+</div>
+</body>
+</html>
